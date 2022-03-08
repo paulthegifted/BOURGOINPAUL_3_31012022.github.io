@@ -1,0 +1,54 @@
+.footer {
+    @include flexbox-center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #353535;
+    &__bloc {
+        display: inline;
+        padding: 0 40px;
+        width: 100%;
+        max-width: 1200px;
+        & .logo {
+            font-family: 'Shrikhand', cursive;
+            font-size: 12px;
+            padding: 15px 0;
+            height: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        &-links {
+            display: inline-flex;
+            flex-direction: row;
+            width: auto;
+            width: 100%;
+            @media (max-width:700px) {
+                flex-direction: column;
+            }
+        }
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            color: white;
+            height: 30px;
+            margin-left: 10%;
+            margin-right: 10px;
+            padding-bottom: 20px;
+            cursor: pointer;
+            &:hover .footer__bloc-link__title {
+                text-decoration: underline;
+            }
+            & i {
+             margin-right: 7px;
+            }
+            &__title {
+                font-size: 16px;
+                font-weight: 400;
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$background-dark-cloud-color: #949494;
+$background-cloud-color: #F5F5F5;
+$gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+$breakpoint-tel: 800px;
+
+@keyframes heart__full__opacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        background-image: linear-gradient(100deg, $color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        opacity: 1;
+        background-image: linear-gradient(100deg, $color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes heart__empty__opacity1 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -307,8 +307,12 @@
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
+  color: #9356DC;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-  background: white;
+  background: #e4d5f6;
+}
+.main .fonctionnement__step:hover .fonctionnement__icon {
+  color: #9356DC;
 }
 .main .fonctionnement__number {
   background-color: #9356DC;
@@ -393,6 +397,7 @@
 .main .restaurants__card .restaurants__card__content .heart {
   position: absolute;
   right: 20px;
+  top: 1;
 }
 .main .restaurants__card .restaurants__card__content .heart__1 {
   position: relative;
